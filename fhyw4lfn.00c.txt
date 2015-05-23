@@ -1,0 +1,28 @@
+﻿Version 1.0.0
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   .classpath
+#	new file:   .project
+#	new file:   bin/com/java/config/Configuration.class
+#	new file:   bin/com/java/main/ExcelReport.class
+#	new file:   bin/com/java/main/MainClass.class
+#	new file:   bin/com/java/utility/DocBuilder.class
+#	new file:   bin/com/java/utility/FileName.class
+#	new file:   lib/dom4j-1.6.1/dom4j-1.6.1.jar
+#	new file:   lib/poi-3.10.1/commons-codec-1.5.jar
+#	new file:   lib/poi-3.10.1/poi-3.10.1-20140818.jar
+#	new file:   lib/poi-3.10.1/poi-ooxml-3.10.1-20140818.jar
+#	new file:   lib/poi-3.10.1/poi-ooxml-schemas-3.10.1-20140818.jar
+#	new file:   lib/poi-3.10.1/stax-api-1.0.1.jar
+#	new file:   lib/poi-3.10.1/xmlbeans-2.6.0.jar
+#	new file:   src/com/java/config/Configuration.java
+#	new file:   src/com/java/main/ExcelReport.java
+#	new file:   src/com/java/main/MainClass.java
+#	new file:   src/com/java/utility/DocBuilder.java
+#	new file:   src/com/java/utility/FileName.java
+#
+
