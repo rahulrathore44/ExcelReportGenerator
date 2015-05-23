@@ -98,8 +98,8 @@ public class ExcelReport {
 			IOException, ParserConfigurationException {
 		doc = DocBuilder.getDocument(xmlFile);
 		doc.getDocumentElement().normalize();
-
-		_reportFile = new FileOutputStream(new File(FileName.getFileName()));
+		String fileName = FileName.getFileName();
+		_reportFile = new FileOutputStream(new File(fileName));
 		_book = new XSSFWorkbook();
 
 		_failCelStyle = _book.createCellStyle();
@@ -161,6 +161,7 @@ public class ExcelReport {
 		}
 		_book.write(_reportFile);
 		_reportFile.close();
+		System.out.println("Report File : " + fileName);
 	}
 
 }
