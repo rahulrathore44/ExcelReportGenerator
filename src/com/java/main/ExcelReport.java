@@ -71,6 +71,10 @@ public class ExcelReport {
 		return ((Element) aNode).getElementsByTagName(aTagName);
 	}
 	
+	private static boolean isDataProviderPresent(Node aNode,final String aDataProvider){
+		return (getNameAttribute(aNode, "data-provider").length() >= 1);
+	}
+	
 	private static void CreateHeader(XSSFWorkbook book,XSSFSheet sheet,String[] aHeader) {
 		_row = sheet.createRow(0);
 		XSSFCell[] headerCell = new XSSFCell[aHeader.length];
@@ -125,7 +129,14 @@ public class ExcelReport {
 				for (int k = 0; k < _methodNodeList.getLength(); k++) {
 					_testMethodName = getNameAttribute(_methodNodeList.item(k), "name");
 					_testMethodStatus = getNameAttribute(_methodNodeList.item(k),"status");
-
+					
+					if(isDataProviderPresent(_methodNodeList.item(k), "data-provider")){
+						String name = "";
+						for(int m = 0; m < getEleListByTagName(_methodNodeList.item(k), "value").getLength(); m++){
+							name = name + "," + getEleListByTagName(_methodNodeList.item(k), "value").item(m).getTextContent().trim();
+						}
+						_testMethodName = _testMethodName + "(" + name.substring(1, name.length()) + ")";
+					}
 					_passCelStyle.setFillForegroundColor(HSSFColor.BRIGHT_GREEN.index);
 					_failCelStyle.setFillForegroundColor(HSSFColor.RED.index);
 
