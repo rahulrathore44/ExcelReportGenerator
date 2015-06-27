@@ -11,7 +11,7 @@ The last column is "Exception Message" which will have the stack trace.
 
 # REQUIREMENTS
 
-* JDK 1.7 & Apache Poi Ver3.10.1 
+	* JDK 1.7 & Apache Poi Ver3.10.1 
 
 # COMMAND LINE
 
