@@ -15,7 +15,7 @@ The last column is "Exception Message" which will have the stack trace.
 
 # COMMAND LINE
 
-	* java -jar TestNgToExcel.jar "<path to testng-result.xml>"
+	* java -jar TestNgToExcel-1.0.0-jar-with-dependencies.jar "<path to testng-result.xml>"
 	
 # IMPORT JAR	
  

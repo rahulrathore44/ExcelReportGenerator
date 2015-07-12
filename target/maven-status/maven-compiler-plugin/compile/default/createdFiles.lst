@@ -1,0 +1,5 @@
+com\xls\report\utility\FileName.class
+com\xls\report\main\MainClass.class
+com\xls\report\main\ExcelReport.class
+com\xls\report\utility\DocBuilder.class
+com\xls\report\config\Configuration.class
