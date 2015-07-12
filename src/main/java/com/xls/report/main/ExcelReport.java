@@ -6,9 +6,6 @@ package com.xls.report.main;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -30,8 +27,6 @@ import org.xml.sax.SAXException;
 import com.xls.report.config.Configuration;
 import com.xls.report.utility.DocBuilder;
 import com.xls.report.utility.FileName;
-import com.xls.report.utility.NodeFactory;
-import com.xls.report.utility.ReportData;
 
 
 
@@ -44,6 +39,7 @@ import com.xls.report.utility.ReportData;
  */
 public class ExcelReport {
 
+	private static Document doc;
 	private static FileOutputStream _reportFile;
 	private static XSSFWorkbook _book;
 	private static NodeList _list;
@@ -65,6 +61,22 @@ public class ExcelReport {
 	private static XSSFCell _expCell;
 	private static XSSFCell _exceptionTraceCell;
 
+	private static NodeList getNodeList(String aNodeName) {
+		return doc.getElementsByTagName(aNodeName);
+	}
+
+	private static String getNameAttribute(Node aNode, String aAttribute) {
+		return ((Element) aNode).getAttribute(aAttribute);
+	}
+
+	private static NodeList getEleListByTagName(Node aNode, String aTagName) {
+		return ((Element) aNode).getElementsByTagName(aTagName);
+	}
+	
+	private static boolean isDataProviderPresent(Node aNode,final String aDataProvider){
+		return (getNameAttribute(aNode, "data-provider").length() >= 1);
+	}
+	
 	private static void CreateHeader(XSSFWorkbook book,XSSFSheet sheet,String[] aHeader) {
 		_row = sheet.createRow(0);
 		XSSFCell[] headerCell = new XSSFCell[aHeader.length];
@@ -88,67 +100,9 @@ public class ExcelReport {
 		}			
 	}
 	
-	public static void generateReport(String xmlFile) throws SAXException, IOException, ParserConfigurationException {
-		HashMap<String, Map<String, ArrayList<String>>> data = (HashMap<String, Map<String, ArrayList<String>>>) ReportData.getTestMethodDetail(xmlFile);
-		String fileName = FileName.getFileName();
-		
-		_reportFile = new FileOutputStream(new File(fileName));
-		_book = new XSSFWorkbook();
-
-		_failCelStyle = _book.createCellStyle();
-		_passCelStyle = _book.createCellStyle();
-		
-		for(String sheetNameKey : data.keySet()){
-			_sheet = _book.createSheet(sheetNameKey);
-			CreateHeader(_book,_sheet,Configuration.aHeader);
-			HashMap<String, ArrayList<String>> testMethods = (HashMap<String, ArrayList<String>>) data.get(sheetNameKey);
-			int l = 1;
-			
-			for(String testMethod : testMethods.keySet()){
-				_passCelStyle.setFillForegroundColor(HSSFColor.BRIGHT_GREEN.index);
-				_failCelStyle.setFillForegroundColor(HSSFColor.RED.index);
-
-				_passCelStyle.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
-				_failCelStyle.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
-
-				_row = _sheet.createRow(l++);
-				_cellName = _row.createCell(0);
-				_cellName.setCellValue(testMethod);
-				ArrayList<String> testData = testMethods.get(testMethod);
-				_cellStatus = _row.createCell(1);
-				
-				if ("fail".equalsIgnoreCase(testData.get(Configuration.aTestStatusIndex))) {
-					_cellStatus.setCellStyle(_failCelStyle);
-					_cellStatus.setCellValue(testData.get(Configuration.aTestStatusIndex));
-					_expCell = _row.createCell(2);
-					_expCell.setCellValue(testData.get(Configuration.aExceptionMsgIndex));
-					_exceptionTraceCell = _row.createCell(3);
-					_exceptionTraceCell.setCellValue(testData.get(Configuration.aExceptionStackTrace).trim());
-				} else {
-					_cellStatus.setCellStyle(_passCelStyle);
-					_cellStatus.setCellValue(testData.get(Configuration.aTestStatusIndex));
-				}
-				
-				/*_cellStatus.setCellValue(testData.get(Configuration.aTestStatusIndex));
-
-				if ("fail".equalsIgnoreCase(testData.get(Configuration.aTestStatusIndex))) {
-					_expCell = _row.createCell(2);
-					_expCell.setCellValue(testData.get(Configuration.aExceptionMsgIndex));
-					_exceptionTraceCell = _row.createCell(3);
-					_exceptionTraceCell.setCellValue(testData.get(Configuration.aExceptionStackTrace).trim());
-				}*/
-			}
-			
-		}
-		_book.write(_reportFile);
-		_reportFile.close();
-		System.out.println("Report File : " + fileName);
-		
-	}
-	
-	public static void adsasdgenerateReport(String xmlFile) throws SAXException,
+	public static void generateReport(String xmlFile) throws SAXException,
 			IOException, ParserConfigurationException {
-		Document doc = DocBuilder.getDocument(xmlFile);
+		doc = DocBuilder.getDocument(xmlFile);
 		doc.getDocumentElement().normalize();
 		String fileName = FileName.getFileName();
 		_reportFile = new FileOutputStream(new File(fileName));
@@ -156,32 +110,32 @@ public class ExcelReport {
 
 		_failCelStyle = _book.createCellStyle();
 		_passCelStyle = _book.createCellStyle();
-		_list = NodeFactory.getNodeList(doc,"test"); // for getting test nodes
+		_list = getNodeList("test"); // for getting test nodes
 
 		/* Outer loop for scanning all the <test> */
 		for (int i = 0; i < _list.getLength(); i++) {
 			int l = 1;
 			
 			/* for getting the class nodes */
-			_classNodeList = NodeFactory.getEleListByTagName(_list.item(i), "class");
-			_sheet = _book.createSheet(NodeFactory.getNameAttribute(_list.item(i), "name"));
+			_classNodeList = getEleListByTagName(_list.item(i), "class");
+			_sheet = _book.createSheet(getNameAttribute(_list.item(i), "name"));
 			CreateHeader(_book,_sheet,Configuration.aHeader);
 			/* inner loop for scanning all the <class> */
 			for (int j = 0; j < _classNodeList.getLength(); j++) {
-				_classNodeName = NodeFactory.getNameAttribute(_classNodeList.item(j), "name");
+				_classNodeName = getNameAttribute(_classNodeList.item(j), "name");
 				
 				/* for getting the list of test method nodes */
-				_methodNodeList = NodeFactory.getEleListByTagName(_classNodeList.item(j), "test-method"); 
+				_methodNodeList = getEleListByTagName(_classNodeList.item(j), "test-method"); 
 
 				/* inner loop for scanning all the <test-method> */
 				for (int k = 0; k < _methodNodeList.getLength(); k++) {
-					_testMethodName = NodeFactory.getNameAttribute(_methodNodeList.item(k), "name");
-					_testMethodStatus = NodeFactory.getNameAttribute(_methodNodeList.item(k),"status");
+					_testMethodName = getNameAttribute(_methodNodeList.item(k), "name");
+					_testMethodStatus = getNameAttribute(_methodNodeList.item(k),"status");
 					
-					if(NodeFactory.isDataProviderPresent(_methodNodeList.item(k), "data-provider")){
+					if(isDataProviderPresent(_methodNodeList.item(k), "data-provider")){
 						String name = "";
-						for(int m = 0; m < NodeFactory.getEleListByTagName(_methodNodeList.item(k), "value").getLength(); m++){
-							name = name + "," + NodeFactory.getEleListByTagName(_methodNodeList.item(k), "value").item(m).getTextContent().trim();
+						for(int m = 0; m < getEleListByTagName(_methodNodeList.item(k), "value").getLength(); m++){
+							name = name + "," + getEleListByTagName(_methodNodeList.item(k), "value").item(m).getTextContent().trim();
 						}
 						_testMethodName = _testMethodName + "(" + name.substring(1, name.length()) + ")";
 					}
@@ -205,10 +159,10 @@ public class ExcelReport {
 					_cellStatus.setCellValue(_testMethodStatus);
 
 					if ("fail".equalsIgnoreCase(_testMethodStatus)) {
-						_exceptionNodeList = NodeFactory.getEleListByTagName(_methodNodeList.item(k), "exception");
-						_exceptionTraceNodeList = NodeFactory.getEleListByTagName(_methodNodeList.item(k), "message");
+						_exceptionNodeList = getEleListByTagName(_methodNodeList.item(k), "exception");
+						_exceptionTraceNodeList = getEleListByTagName(_methodNodeList.item(k), "message");
 						_exceptionTrace = _exceptionTraceNodeList.item(0).getTextContent();
-						_expMessage = NodeFactory.getNameAttribute(_exceptionNodeList.item(0), "class");
+						_expMessage = getNameAttribute(_exceptionNodeList.item(0), "class");
 						_expCell = _row.createCell(2);
 						_expCell.setCellValue(_expMessage);
 						_exceptionTraceCell = _row.createCell(3);
@@ -222,5 +176,5 @@ public class ExcelReport {
 		_reportFile.close();
 		System.out.println("Report File : " + fileName);
 	}
-	
+
 }
