@@ -1,5 +1,8 @@
-com\xls\report\utility\FileName.class
 com\xls\report\main\MainClass.class
+com\xls\report\utility\NodeFactory.class
 com\xls\report\main\ExcelReport.class
 com\xls\report\utility\DocBuilder.class
 com\xls\report\config\Configuration.class
+com\xls\report\utility\ReportData.class
+com\xls\report\config\ExcelConfiguration.class
+com\xls\report\utility\FileName.class
