@@ -37,6 +37,7 @@ public class MainClass {
 		ExcelReport.generateReport("F:\\pktestng-results.xml");
 		Thread.sleep(2000);
 		ExcelReport.generateReport("F:\\AllAnotestng-results.xml");
+		//ExcelReport.CreateOrUpdateReport("Excel_Report_2015-07-14_23-39-30.xlsx", "F:\\newdptestng-results.xml");
 		
 		/*HashMap<String, Map<String, ArrayList<String>>> data = (HashMap<String, Map<String, ArrayList<String>>>) ExcelReportUpdate.getTestMethodDetail("F:\\testng-results.xml");
 		for(String outerKey : data.keySet()){
