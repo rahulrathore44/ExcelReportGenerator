@@ -30,14 +30,14 @@ public class MainClass {
 					+ "was not present at the "
 					+ "given location");*/
 		//ExcelReport.generateReport(args[0]);
-		ExcelReport.generateReport("F:\\testng-results.xml");
+		/*ExcelReport.generateReport("F:\\testng-results.xml");
 		Thread.sleep(2000);
 		ExcelReport.generateReport("F:\\dptestng-results.xml");
 		Thread.sleep(2000);
 		ExcelReport.generateReport("F:\\pktestng-results.xml");
 		Thread.sleep(2000);
-		ExcelReport.generateReport("F:\\AllAnotestng-results.xml");
-		//ExcelReport.CreateOrUpdateReport("Excel_Report_2015-07-14_23-39-30.xlsx", "F:\\newdptestng-results.xml");
+		ExcelReport.generateReport("F:\\AllAnotestng-results.xml");*/
+		ExcelReport.CreateOrUpdateReport("Excel_Report_2015-07-15_22-18-58.xlsx", "F:\\TestngxmlFiles\\testng-results.xml");
 		
 		/*HashMap<String, Map<String, ArrayList<String>>> data = (HashMap<String, Map<String, ArrayList<String>>>) ExcelReportUpdate.getTestMethodDetail("F:\\testng-results.xml");
 		for(String outerKey : data.keySet()){

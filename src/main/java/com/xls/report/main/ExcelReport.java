@@ -18,6 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.xml.sax.SAXException;
 
+import com.xls.report.config.Configuration;
 import com.xls.report.config.ExcelConfiguration;
 import com.xls.report.utility.FileName;
 import com.xls.report.utility.ReportData;
@@ -76,12 +77,16 @@ public class ExcelReport {
 				HashMap<String, ArrayList<String>> sheetMap = (HashMap<String, ArrayList<String>>) data.get(sheetName);
 				HashMap<String, ArrayList<String>> newSheetMap = ExcelConfiguration.appendExcelData(xlSheet,sheetMap);
 				data.put(sheetName, newSheetMap);
-			}else{
-				XSSFSheet xlSheet = ExcelConfiguration.getSheet(book, sheetName);
-				HashMap<String, ArrayList<String>> sheetMap = ExcelConfiguration.appendExcelDataToMap(xlSheet);
-				data.put(sheetName, sheetMap);
 			}
 		}
+		for(int i = 0; i < ExcelConfiguration.getTotalSheetCount(book); i++){
+			XSSFSheet xlSheet = book.getSheetAt(i);
+			if(data.containsKey(xlSheet.getSheetName()))
+				continue;
+			HashMap<String, ArrayList<String>> sheetMap = ExcelConfiguration.appendExcelDataToMap(xlSheet);
+			data.put(xlSheet.getSheetName(), sheetMap);
+		}
+
 		_book = ReportData.createExcelFile(data);
 		String fileName = FileName.getFileName();
 		_reportFile = new FileOutputStream(new File(fileName));

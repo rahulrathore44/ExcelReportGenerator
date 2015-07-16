@@ -115,9 +115,14 @@ public class ExcelConfiguration {
 	public static int getTotalSheetCount(XSSFWorkbook book) {
 		int index = 0;
 			while(true){
-				if(book.getSheetAt(index) == null)
+				try {
+					if(book.getSheetAt(index) == null)
+						break;
+					index++;
+				} catch (Exception e) {
 					break;
-				index++;
+				}
+				
 			}
 		return index;
 	}
@@ -146,7 +151,11 @@ public class ExcelConfiguration {
 	 */
 	private static ArrayList<String> addDataToMap(XSSFRow row,ArrayList<String> arrayList) {
 		for(int i = row.getFirstCellNum(); i < row.getLastCellNum(); i++){
-			arrayList.remove(i);
+			try {
+				arrayList.remove(i);
+			} catch (Exception e) {
+				// ignored
+			}
 			arrayList.add(i, row.getCell(i).getStringCellValue());
 		}
 		return arrayList;
