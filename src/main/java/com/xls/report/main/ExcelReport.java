@@ -61,7 +61,7 @@ public class ExcelReport {
 	 * @throws IOException
 	 * @throws ParserConfigurationException	
 	 */
-	public static void CreateOrUpdateReport(String srcExcel,String srcXml) throws SAXException, IOException, ParserConfigurationException {
+	public static void createOrUpdateReport(String srcExcel,String srcXml) throws SAXException, IOException, ParserConfigurationException {
 		
 		File createFile = new File(srcExcel);
 		if(!createFile.exists()){
