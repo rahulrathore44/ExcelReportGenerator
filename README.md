@@ -4,14 +4,14 @@ This java api uses the "testng-result.xml" file to generate the excel report. Th
   
 ex: com.testcase.Testclass.testcaseOne  
 
-The second column is "Status" which will have pass/fail. 
-The 3rd column is the "Exception" which will have exception name. 
-The last column is "Exception Message" which will have the stack trace. 
+* The second column is "Status" which will have pass/fail. 
+* The 3rd column is the "Exception" which will have exception name. 
+* The last column is "Exception Message" which will have the stack trace. 
 
 The api include two methods
 
-generateReport :- Create a fresh report form xml file
-createOrUpdateReport :- Create a fresh report/update the existing report file created using the same api.
+* generateReport :- Create a fresh report form xml file
+* createOrUpdateReport :- Create a fresh report/update the existing report file created using the same api.
 
 
 
