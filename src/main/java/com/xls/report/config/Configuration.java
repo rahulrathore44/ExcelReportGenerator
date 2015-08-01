@@ -22,6 +22,7 @@ public class Configuration {
 	public static final String aValueAttribute = "value";
 	public static final String aDataProviderAttribute = "data-provider";
 	public static final String aMessageAttribute = "message";
+	public static final String aTransformKeyword = "Build";
 	
 	public static final int aFirstIndex = 0;
 	public static final int aTestNameIndex = 0;

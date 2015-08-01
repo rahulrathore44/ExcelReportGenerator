@@ -37,14 +37,14 @@ public class MainClass {
 				throw new InvalidNumberOfArgumentException(" Invalid Number of Argument ");
 		}
 		
-		/*ExcelReport.generateReport("F:\\testng-results.xml");
+		/*ExcelReport.generateReport("testngxmlfiles\\testng-results.xml");
 		Thread.sleep(2000);
-		ExcelReport.generateReport("F:\\dptestng-results.xml");
+		ExcelReport.generateReport("testngxmlfiles\\dptestng-results.xml");
 		Thread.sleep(2000);
-		ExcelReport.generateReport("F:\\pktestng-results.xml");
+		ExcelReport.generateReport("testngxmlfiles\\pktestng-results.xml");
 		Thread.sleep(2000);
-		ExcelReport.generateReport("F:\\AllAnotestng-results.xml");*/
-		//ExcelReport.CreateOrUpdateReport("Excel_Report_2015-07-15_22-18-58.xlsx", "F:\\TestngxmlFiles\\testng-results.xml");
+		ExcelReport.generateReport("testngxmlfiles\\AllAnotestng-results.xml");*/
+		//ExcelReport.CreateOrUpdateReport("Excel_Report_2015-07-15_22-18-58.xlsx", "testngxmlfiles\\testng-results.xml");
 		
 		/*HashMap<String, Map<String, ArrayList<String>>> data = (HashMap<String, Map<String, ArrayList<String>>>) ExcelReportUpdate.getTestMethodDetail("F:\\testng-results.xml");
 		for(String outerKey : data.keySet()){

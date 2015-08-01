@@ -37,14 +37,16 @@ public class ExcelReport {
 	private static FileOutputStream _reportFile;
 	private static XSSFWorkbook _book;
 	
-		
+
 	/**
 	 * @param xmlFile
+	 * @return
 	 * @throws SAXException
 	 * @throws IOException
 	 * @throws ParserConfigurationException	
 	 */
-	public static void generateReport(String xmlFile) throws SAXException, IOException, ParserConfigurationException {
+	
+	public static String generateReport(String xmlFile) throws SAXException, IOException, ParserConfigurationException {
 		HashMap<String, Map<String, ArrayList<String>>> data = (HashMap<String, Map<String, ArrayList<String>>>) ReportData.getTestMethodDetail(xmlFile);
 		_book = ReportData.createExcelFile(data);
 		String fileName = FileName.getFileName();
@@ -52,21 +54,23 @@ public class ExcelReport {
 		_book.write(_reportFile);
 		_reportFile.close();
 		System.out.println("Report File : " + fileName);
+		return fileName;
 	}
 	
 	/**
 	 * @param srcExcel
 	 * @param srcXml
+	 * @return
 	 * @throws SAXException
 	 * @throws IOException
 	 * @throws ParserConfigurationException	
 	 */
-	public static void createOrUpdateReport(String srcExcel,String srcXml) throws SAXException, IOException, ParserConfigurationException {
+	
+	public static String createOrUpdateReport(String srcExcel,String srcXml) throws SAXException, IOException, ParserConfigurationException {
 		
 		File createFile = new File(srcExcel);
 		if(!createFile.exists()){
-			generateReport(srcXml);
-			return;
+			return generateReport(srcXml);
 		}
 		
 		HashMap<String, Map<String, ArrayList<String>>> data = (HashMap<String, Map<String, ArrayList<String>>>) ReportData.getTestMethodDetail(srcXml);
@@ -93,6 +97,7 @@ public class ExcelReport {
 		_book.write(_reportFile);
 		_reportFile.close();
 		System.out.println("Report File : " + fileName);
+		return fileName;
 		
 	}
 	

@@ -86,7 +86,7 @@ public class ReportData {
 						exceptionTrace = exceptionTraceNodeList.item(Configuration.aFirstIndex).getTextContent();
 						expMessage = NodeFactory.getNameAttribute(exceptionNodeList.item(Configuration.aFirstIndex), Configuration.aClassNode);
 						testMethodDataList.add(Configuration.aExceptionMsgIndex, expMessage);
-						testMethodDataList.add(Configuration.aExceptionStackTrace, exceptionTrace);
+						testMethodDataList.add(Configuration.aExceptionStackTrace, ExcelConfiguration.transformExpMessage(exceptionTrace));
 					}
 					else{
 						testMethodDataList.add(Configuration.aExceptionMsgIndex, " ");

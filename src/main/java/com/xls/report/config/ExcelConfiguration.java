@@ -161,6 +161,10 @@ public class ExcelConfiguration {
 		return arrayList;
 	}
 	
+	/**
+	 * @param xlSheet
+	 * @return	
+	 */
 	public static HashMap<String, ArrayList<String>> appendExcelDataToMap(XSSFSheet xlSheet) {
 		XSSFRow row = null;
 		Map<String, ArrayList<String>> sheetMap = new HashMap<String,ArrayList<String>>();
@@ -171,6 +175,12 @@ public class ExcelConfiguration {
 			 sheetMap.put(row.getCell(Configuration.aTestNameIndex).getStringCellValue(), newData);
 		}
 		return (HashMap<String, ArrayList<String>>) sheetMap;
+	}
+	
+	public static String transformExpMessage(String aMesg) {
+		if(aMesg.indexOf(Configuration.aTransformKeyword)!= -1)
+			return aMesg.substring(0, aMesg.indexOf(Configuration.aTransformKeyword));
+		return aMesg;
 	}
 
 }
