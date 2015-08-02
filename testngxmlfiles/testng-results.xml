@@ -1,386 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="19" total="24" passed="5">
+<testng-results skipped="0" failed="12" total="33" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="261009" started-at="2014-10-24T06:00:59Z" finished-at="2014-10-24T06:05:20Z">
+  <suite name="Webdriver" duration-ms="809119" started-at="2015-08-02T03:03:34Z" finished-at="2015-08-02T03:17:03Z">
     <groups>
     </groups>
-	<test name="Annotations" duration-ms="46" started-at="2015-05-23T12:58:54Z" finished-at="2015-05-23T12:58:54Z">
-      <class name="testcase.testOne.MainClass">
-        <test-method status="PASS" signature="testCaseOne(java.lang.String, java.lang.String)[pri:0, instance:testcase.testOne.MainClass@f25b18]" name="testCaseOne" duration-ms="16" started-at="2015-05-23T20:58:54Z" data-provider="name" finished-at="2015-05-23T20:58:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseOne -->
-        <test-method status="PASS" signature="testCaseOne(java.lang.String, java.lang.String)[pri:0, instance:testcase.testOne.MainClass@f25b18]" name="testCaseOne" duration-ms="15" started-at="2015-05-23T20:58:54Z" data-provider="name" finished-at="2015-05-23T20:58:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[c]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseOne -->
-      </class> <!-- testcase.testOne.MainClass -->
-    </test>
-	<test name="AnnotationsData" duration-ms="53" started-at="2015-05-24T15:33:29Z" finished-at="2015-05-24T15:33:29Z">
-      <class name="testcase.testOne.MainClass">
-        <test-method status="PASS" signature="testCaseOne(java.lang.String, testcase.testOne.a)[pri:0, instance:testcase.testOne.MainClass@1612c8f]" name="testCaseOne" duration-ms="24" started-at="2015-05-24T23:33:29Z" data-provider="name" finished-at="2015-05-24T23:33:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testcase.testOne.a@4c4b3e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseOne -->
-        <test-method status="PASS" signature="testCaseOne(java.lang.String, testcase.testOne.a)[pri:0, instance:testcase.testOne.MainClass@1612c8f]" name="testCaseOne" duration-ms="2" started-at="2015-05-24T23:33:29Z" data-provider="name" finished-at="2015-05-24T23:33:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[c]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testcase.testOne.a@bc713e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseOne -->
-      </class> <!-- testcase.testOne.MainClass -->
-    </test> <!-- Annotations -->
-    <test name="Alert Suite" duration-ms="88144" started-at="2014-10-24T06:00:59Z" finished-at="2014-10-24T06:02:27Z">
-      <class name="testcase.TestAdminConsole">
-        <test-method status="PASS" signature="testAdmin()[pri:0, instance:testcase.TestAdminConsole@10cceb3]" name="testAdmin" duration-ms="35084" started-at="2014-10-24T11:30:59Z" finished-at="2014-10-24T11:31:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdmin -->
-      </class> <!-- testcase.TestAdminConsole -->
-      <class name="testcase.TestAlert">
-        <test-method status="FAIL" signature="testCasealert()[pri:0, instance:testcase.TestAlert@1a5f0f3]" name="testCasealert" duration-ms="9164" started-at="2014-10-24T11:31:34Z" finished-at="2014-10-24T11:31:43Z">
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[No Such Element : //div[@id='main']/div[6]/a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: No Such Element : //div[@id='main']/div[6]/a
-	at helper.StartWebDriver.getElement(StartWebDriver.java:65)
-	at helper.ButtonHelper.clickButton(ButtonHelper.java:8)
-	at testcase.TestAlert.testCasealert(TestAlert.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCasealert -->
-      </class> <!-- testcase.TestAlert -->
-      <class name="testcase.TestAllObject">
-        <test-method status="PASS" signature="testAll()[pri:0, instance:testcase.TestAllObject@1d66d2f]" name="testAll" duration-ms="5531" started-at="2014-10-24T11:31:43Z" finished-at="2014-10-24T11:31:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAll -->
-      </class> <!-- testcase.TestAllObject -->
-      <class name="testcase.TestDisplayed">
-        <test-method status="PASS" signature="testCheckElement()[pri:0, instance:testcase.TestDisplayed@16e0123]" name="testCheckElement" duration-ms="12286" started-at="2014-10-24T11:32:14Z" finished-at="2014-10-24T11:32:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckElement -->
-      </class> <!-- testcase.TestDisplayed -->
-      <class name="testcase.TestClass">
-        <test-method status="FAIL" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@8c8a04]" name="testCase" duration-ms="6226" started-at="2014-10-24T11:31:49Z" data-provider="testValidLogin" finished-at="2014-10-24T11:31:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{UserName=User1, Password=Pass1, Valid=No}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestClass.testCase(TestClass.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase -->
-        <test-method status="FAIL" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@8c8a04]" name="testCase" duration-ms="6214" started-at="2014-10-24T11:31:56Z" data-provider="testValidLogin" finished-at="2014-10-24T11:32:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{UserName=User2, Password=Pass2, Valid=No}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestClass.testCase(TestClass.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase -->
-        <test-method status="FAIL" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@8c8a04]" name="testCase" duration-ms="6210" started-at="2014-10-24T11:32:02Z" data-provider="testValidLogin" finished-at="2014-10-24T11:32:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{UserName=User3, Password=Pass3, Valid=No}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestClass.testCase(TestClass.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase -->
-        <test-method status="FAIL" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@8c8a04]" name="testCase" duration-ms="6379" started-at="2014-10-24T11:32:08Z" data-provider="testValidLogin" finished-at="2014-10-24T11:32:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{UserName=rahul@bugzila.com, Password=welcome, Valid=yes}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestClass.testCase(TestClass.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase -->
-        <test-method status="FAIL" signature="writeToExcel()[pri:0, instance:testcase.TestClass@8c8a04]" name="writeToExcel" is-config="true" duration-ms="0" started-at="2014-10-24T11:32:14Z" finished-at="2014-10-24T11:32:14Z">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index: 0, Size: 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at testcase.UpdateExcel.UpdatedExcel(UpdateExcel.java:24)
-	at testcase.TestClass.writeToExcel(TestClass.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeToExcel -->
-      </class> <!-- testcase.TestClass -->
-    </test> <!-- Alert Suite -->
-    <test name="Webdriver Suite" duration-ms="73815" started-at="2014-10-24T06:02:27Z" finished-at="2014-10-24T06:03:41Z">
+    <test name="Bugzila Suite" duration-ms="510396" started-at="2015-08-02T03:03:34Z" finished-at="2015-08-02T03:12:05Z">
       <class name="testcase.TestNavigation">
-        <test-method status="FAIL" signature="testNavigate()[pri:0, instance:testcase.TestNavigation@16a4aef]" name="testNavigate" duration-ms="6090" started-at="2014-10-24T11:33:35Z" finished-at="2014-10-24T11:33:41Z">
-          <exception class="java.util.NoSuchElementException">
+        <test-method status="FAIL" signature="testNavigate()[pri:0, instance:testcase.TestNavigation@170f15e]" name="testNavigate" duration-ms="37197" started-at="2015-08-02T11:08:10Z" finished-at="2015-08-02T11:08:47Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
+              <![CDATA[Timed out waiting for page load.
+Command duration or timeout: 30.11 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: df024345-fa36-4682-a159-898c2ad930ec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestNavigation.testNavigate(TestNavigation.java:13)
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 30.11 seconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: df024345-fa36-4682-a159-898c2ad930ec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:854)
+	at helper.WindowHelper.navigateToPage(WindowHelper.java:67)
+	at testcase.TestNavigation.testNavigate(TestNavigation.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -401,28 +61,41 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous1508010067940098328webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8598)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous1508010067940098328webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4712)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous1508010067940098328webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4720)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous1508010067940098328webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigate -->
       </class> <!-- testcase.TestNavigation -->
-      <class name="testcase.TestMultiWindow">
-        <test-method status="FAIL" signature="testWin()[pri:0, instance:testcase.TestMultiWindow@191a42]" name="testWin" duration-ms="9140" started-at="2014-10-24T11:33:25Z" finished-at="2014-10-24T11:33:35Z">
-          <exception class="java.util.NoSuchElementException">
+      <class name="testcase.TestRadioButton">
+        <test-method status="PASS" signature="testRadioButton()[pri:0, instance:testcase.TestRadioButton@af1b50]" name="testRadioButton" duration-ms="31129" started-at="2015-08-02T11:09:44Z" finished-at="2015-08-02T11:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButton -->
+      </class> <!-- testcase.TestRadioButton -->
+      <class name="testcase.TestSelect">
+        <test-method status="FAIL" signature="testDropDown()[pri:0, instance:testcase.TestSelect@1b9a77c]" name="testDropDown" duration-ms="13590" started-at="2015-08-02T11:10:15Z" finished-at="2015-08-02T11:10:28Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[No Such Element : //div[@id='main']/div[6]/a]]>
+              <![CDATA[java.io.FileNotFoundException]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: No Such Element : //div[@id='main']/div[6]/a
-	at helper.StartWebDriver.getElement(StartWebDriver.java:65)
-	at helper.ButtonHelper.clickButton(ButtonHelper.java:8)
-	at testcase.TestMultiWindow.testWin(TestMultiWindow.java:14)
+              <![CDATA[java.lang.AssertionError: java.io.FileNotFoundException
+	at org.testng.Assert.fail(Assert.java:94)
+	at testcase.TestSelect.testDropDown(TestSelect.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -445,29 +118,192 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWin -->
-      </class> <!-- testcase.TestMultiWindow -->
-      <class name="testcase.TestFrameWork">
-        <test-method status="FAIL" signature="testCaseFrame()[pri:0, instance:testcase.TestFrameWork@380c76]" name="testCaseFrame" duration-ms="47" started-at="2014-10-24T11:33:22Z" finished-at="2014-10-24T11:33:22Z">
+        </test-method> <!-- testDropDown -->
+      </class> <!-- testcase.TestSelect -->
+      <class name="testcase.TestNg">
+        <test-method status="PASS" signature="startWebdriver()[pri:0, instance:testcase.TestNg@1b8338e]" name="startWebdriver" is-config="true" duration-ms="5516" started-at="2015-08-02T11:11:07Z" finished-at="2015-08-02T11:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebdriver -->
+        <test-method status="FAIL" signature="testCase()[pri:0, instance:testcase.TestNg@1b8338e]" name="testCase" duration-ms="11046" started-at="2015-08-02T11:11:12Z" finished-at="2015-08-02T11:11:23Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Bugzilla Main Page] but found [Tryit Editor v2.1]]]>
+              <![CDATA[expected [Google1] but found [null]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Bugzilla Main Page] but found [Tryit Editor v2.1]
+              <![CDATA[java.lang.AssertionError: expected [Google1] but found [null]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at testcase.TestFrameWork.testCaseFrame(TestFrameWork.java:14)
+	at testcase.TestNg.testCase(TestNg.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method status="PASS" signature="stopWebdriver()[pri:0, instance:testcase.TestNg@1b8338e]" name="stopWebdriver" is-config="true" duration-ms="0" started-at="2015-08-02T11:11:36Z" finished-at="2015-08-02T11:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopWebdriver -->
+      </class> <!-- testcase.TestNg -->
+      <class name="testcase.TestAllObject">
+        <test-method status="PASS" signature="testAll()[pri:0, instance:testcase.TestAllObject@750bcb]" name="testAll" duration-ms="4997" started-at="2015-08-02T11:05:37Z" finished-at="2015-08-02T11:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAll -->
+      </class> <!-- testcase.TestAllObject -->
+      <class name="testcase.TestMouseAction">
+        <test-method status="FAIL" signature="testAction()[pri:0, instance:testcase.TestMouseAction@1ab5267]" name="testAction" duration-ms="12910" started-at="2015-08-02T11:07:46Z" finished-at="2015-08-02T11:07:59Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[document.getElementById(...) is null
+Command duration or timeout: 67 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: df024345-fa36-4682-a159-898c2ad930ec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: document.getElementById(...) is null
+Command duration or timeout: 67 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: df024345-fa36-4682-a159-898c2ad930ec
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
+	at testcase.TestMouseAction.testAction(TestMouseAction.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.WebDriverException: document.getElementById(...) is null
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.anonymous(http://localhost:5001/ line 69 > Function:1)
+	at <anonymous class>.handleEvaluateEvent(http://localhost:5001/:69)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAction -->
+      </class> <!-- testcase.TestMouseAction -->
+      <class name="testcase.LoginTest">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testcase.LoginTest@2a2397]" name="testLogin" duration-ms="14970" started-at="2015-08-02T11:03:54Z" finished-at="2015-08-02T11:04:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testPreferences()[pri:0, instance:testcase.LoginTest@2a2397]" name="testPreferences" duration-ms="19667" started-at="2015-08-02T11:04:09Z" finished-at="2015-08-02T11:04:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPreferences -->
+        <test-method status="PASS" signature="testAdministration()[pri:0, instance:testcase.LoginTest@2a2397]" name="testAdministration" duration-ms="19036" started-at="2015-08-02T11:04:28Z" finished-at="2015-08-02T11:04:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdministration -->
+        <test-method status="PASS" signature="testReport()[pri:0, instance:testcase.LoginTest@2a2397]" name="testReport" duration-ms="19185" started-at="2015-08-02T11:04:47Z" finished-at="2015-08-02T11:05:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReport -->
+      </class> <!-- testcase.LoginTest -->
+      <class name="testcase.TestAdminConsole">
+        <test-method status="PASS" signature="testAdmin()[pri:0, instance:testcase.TestAdminConsole@1add4d8]" name="testAdmin" duration-ms="30657" started-at="2015-08-02T11:05:07Z" finished-at="2015-08-02T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdmin -->
+      </class> <!-- testcase.TestAdminConsole -->
+      <class name="testcase.listener.TestWebDriverListener">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.listener.TestWebDriverListener@1a472e9]" name="setUp" is-config="true" duration-ms="19254" started-at="2015-08-02T11:03:34Z" finished-at="2015-08-02T11:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCaseOne()[pri:0, instance:testcase.listener.TestWebDriverListener@1a472e9]" name="testCaseOne" duration-ms="27570" started-at="2015-08-02T11:11:36Z" finished-at="2015-08-02T11:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseOne -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.listener.TestWebDriverListener@1a472e9]" name="tearDown" is-config="true" duration-ms="926" started-at="2015-08-02T11:12:04Z" finished-at="2015-08-02T11:12:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.listener.TestWebDriverListener -->
+      <class name="testcase.TestFrameWork">
+        <test-method status="FAIL" signature="testCaseFrame()[pri:0, instance:testcase.TestFrameWork@1a2fa45]" name="testCaseFrame" duration-ms="2289" started-at="2015-08-02T11:07:29Z" finished-at="2015-08-02T11:07:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome to Bugzilla] but found [Bugzilla Main Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome to Bugzilla] but found [Bugzilla Main Page]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at testcase.TestFrameWork.testCaseFrame(TestFrameWork.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -496,30 +332,120 @@
         </test-method> <!-- testCaseFrame -->
       </class> <!-- testcase.TestFrameWork -->
       <class name="testcase.TestExpectedConditions">
-        <test-method status="FAIL" signature="testConditions()[pri:0, instance:testcase.TestExpectedConditions@14aa453]" name="testConditions" duration-ms="33653" started-at="2014-10-24T11:32:27Z" finished-at="2014-10-24T11:33:00Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="PASS" signature="testConditions()[pri:0, instance:testcase.TestExpectedConditions@17e7420]" name="testConditions" duration-ms="4467" started-at="2015-08-02T11:07:24Z" finished-at="2015-08-02T11:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConditions -->
+      </class> <!-- testcase.TestExpectedConditions -->
+      <class name="testcase.TestWebElement">
+        <test-method status="PASS" signature="testFindElemet()[pri:0, instance:testcase.TestWebElement@40e6e2]" name="testFindElemet" duration-ms="7319" started-at="2015-08-02T11:10:59Z" finished-at="2015-08-02T11:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindElemet -->
+      </class> <!-- testcase.TestWebElement -->
+      <class name="testcase.TestPageFactory">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testcase.TestPageFactory@db93a2]" name="testLogin" duration-ms="9750" started-at="2015-08-02T11:09:00Z" finished-at="2015-08-02T11:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testPreferences()[pri:0, instance:testcase.TestPageFactory@db93a2]" name="testPreferences" duration-ms="17412" started-at="2015-08-02T11:09:10Z" finished-at="2015-08-02T11:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPreferences -->
+        <test-method status="PASS" signature="testAdministration()[pri:0, instance:testcase.TestPageFactory@db93a2]" name="testAdministration" duration-ms="16356" started-at="2015-08-02T11:09:27Z" finished-at="2015-08-02T11:09:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdministration -->
+      </class> <!-- testcase.TestPageFactory -->
+      <class name="testcase.TestScript">
+        <test-method status="PASS" signature="testCaseScript()[pri:0, instance:testcase.TestScript@b942f7]" name="testCaseScript" duration-ms="19100" started-at="2015-08-02T11:10:40Z" finished-at="2015-08-02T11:10:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseScript -->
+      </class> <!-- testcase.TestScript -->
+      <class name="testcase.TestClass">
+        <test-method status="PASS" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@81f3f8]" name="testCase" duration-ms="18901" started-at="2015-08-02T11:05:43Z" data-provider="testValidLogin" finished-at="2015-08-02T11:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=User1, Password=Pass1, Valid=No}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method status="PASS" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@81f3f8]" name="testCase" duration-ms="18790" started-at="2015-08-02T11:06:02Z" data-provider="testValidLogin" finished-at="2015-08-02T11:06:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=User2, Password=Pass2, Valid=No}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method status="PASS" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@81f3f8]" name="testCase" duration-ms="18591" started-at="2015-08-02T11:06:21Z" data-provider="testValidLogin" finished-at="2015-08-02T11:06:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=User3, Password=Pass3, Valid=No}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+        <test-method status="PASS" signature="testCase(java.util.Map)[pri:0, instance:testcase.TestClass@81f3f8]" name="testCase" duration-ms="33861" started-at="2015-08-02T11:06:40Z" data-provider="testValidLogin" finished-at="2015-08-02T11:07:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=rahul@bugzila.com, Password=rathore, Valid=yes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase -->
+      </class> <!-- testcase.TestClass -->
+      <class name="testcase.TestDisplayed">
+        <test-method status="PASS" signature="testCheckElement()[pri:0, instance:testcase.TestDisplayed@f9edf3]" name="testCheckElement" duration-ms="10722" started-at="2015-08-02T11:07:13Z" finished-at="2015-08-02T11:07:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckElement -->
+      </class> <!-- testcase.TestDisplayed -->
+      <class name="testcase.TestKeyBoard">
+        <test-method status="PASS" signature="testKey()[pri:0, instance:testcase.TestKeyBoard@1f66272]" name="testKey" duration-ms="3462" started-at="2015-08-02T11:07:42Z" finished-at="2015-08-02T11:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKey -->
+      </class> <!-- testcase.TestKeyBoard -->
+    </test> <!-- Bugzila Suite -->
+    <test name="Java Script Suite" duration-ms="171137" started-at="2015-08-02T03:12:05Z" finished-at="2015-08-02T03:14:56Z">
+      <class name="testcase.TestMultiWindow">
+        <test-method status="FAIL" signature="testWin()[pri:0, instance:testcase.TestMultiWindow@1b5c3ba]" name="testWin" duration-ms="6493" started-at="2015-08-02T11:14:21Z" finished-at="2015-08-02T11:14:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Timed out after 30 seconds waiting for testcase.TestExpectedConditions$1@121471c
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]]]>
+              <![CDATA[No Such Element : //div[@id='main']/div[6]/a
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for testcase.TestExpectedConditions$1@121471c
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at testcase.TestExpectedConditions.testConditions(TestExpectedConditions.java:36)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: No Such Element : //div[@id='main']/div[6]/a
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver
+	at helper.StartWebDriver.getElement(StartWebDriver.java:137)
+	at helper.ButtonHelper.clickButton(ButtonHelper.java:17)
+	at testcase.TestMultiWindow.testWin(TestMultiWindow.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -542,43 +468,143 @@ Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true,
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testConditions -->
-      </class> <!-- testcase.TestExpectedConditions -->
-      <class name="testcase.TestFluentWait">
-        <test-method status="PASS" signature="testWait()[pri:0, instance:testcase.TestFluentWait@1ba3afe]" name="testWait" duration-ms="21701" started-at="2014-10-24T11:33:00Z" finished-at="2014-10-24T11:33:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWait -->
-      </class> <!-- testcase.TestFluentWait -->
-      <class name="testcase.TestKeyBoard">
-        <test-method status="FAIL" signature="testKey()[pri:0, instance:testcase.TestKeyBoard@15dbaab]" name="testKey" duration-ms="3105" started-at="2014-10-24T11:33:22Z" finished-at="2014-10-24T11:33:25Z">
+        </test-method> <!-- testWin -->
+      </class> <!-- testcase.TestMultiWindow -->
+      <class name="testcase.TestAlert">
+        <test-method status="FAIL" signature="testCasealert()[pri:0, instance:testcase.TestAlert@1c4c648]" name="testCasealert" duration-ms="17743" started-at="2015-08-02T11:13:04Z" finished-at="2015-08-02T11:13:21Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"quicksearch_top"}
-Command duration or timeout: 3.09 seconds
+              <![CDATA[No Such Element : //div[@id='main']/div[6]/a
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]]]>
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"quicksearch_top"}
-Command duration or timeout: 3.09 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: No Such Element : //div[@id='main']/div[6]/a
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver
+	at helper.StartWebDriver.getElement(StartWebDriver.java:137)
+	at helper.ButtonHelper.clickButton(ButtonHelper.java:17)
+	at testcase.TestAlert.testCasealert(TestAlert.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCasealert -->
+      </class> <!-- testcase.TestAlert -->
+      <class name="testcase.TestPrompt">
+        <test-method status="FAIL" signature="testCasePrompt()[pri:0, instance:testcase.TestPrompt@107f672]" name="testCasePrompt" duration-ms="17960" started-at="2015-08-02T11:13:35Z" finished-at="2015-08-02T11:13:52Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[No Such Element : //div[@id='main']/div[8]/a
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: No Such Element : //div[@id='main']/div[8]/a
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: StartWebDriver
+	at helper.StartWebDriver.getElement(StartWebDriver.java:137)
+	at helper.ButtonHelper.clickButton(ButtonHelper.java:17)
+	at testcase.TestPrompt.testCasePrompt(TestPrompt.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCasePrompt -->
+      </class> <!-- testcase.TestPrompt -->
+      <class name="testcase.TestFluentWait">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.TestFluentWait@13159f1]" name="setUp" is-config="true" duration-ms="58479" started-at="2015-08-02T11:12:05Z" finished-at="2015-08-02T11:13:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testWait()[pri:0, instance:testcase.TestFluentWait@13159f1]" name="testWait" duration-ms="2344" started-at="2015-08-02T11:14:06Z" finished-at="2015-08-02T11:14:08Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"iframeResult"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+*** Element info: {Using=id, value=iframeResult}
+Session ID: 918c958d-5d42-4953-9e83-426eb50462c5
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"iframeResult"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+*** Element info: {Using=id, value=iframeResult}
+Session ID: 918c958d-5d42-4953-9e83-426eb50462c5
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -586,11 +612,11 @@ Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true,
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
 	at org.openqa.selenium.By$ById.findElement(By.java:214)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at testcase.TestKeyBoard.testKey(TestKeyBoard.java:16)
+	at testcase.TestFluentWait.testWait(TestFluentWait.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -611,53 +637,64 @@ Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true,
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"quicksearch_top"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"iframeResult"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3372060217898444313webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3372060217898444313webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testKey -->
-      </class> <!-- testcase.TestKeyBoard -->
-      <class name="testcase.TestMouseAction">
-        <test-method status="FAIL" signature="testAction()[pri:0, instance:testcase.TestMouseAction@176feaf]" name="testAction" duration-ms="43" started-at="2014-10-24T11:33:25Z" finished-at="2014-10-24T11:33:25Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- testWait -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.TestFluentWait@13159f1]" name="tearDown" is-config="true" duration-ms="531" started-at="2015-08-02T11:14:56Z" finished-at="2015-08-02T11:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.TestFluentWait -->
+      <class name="testcase.TestWebdriverWait">
+        <test-method status="FAIL" signature="testWait()[pri:0, instance:testcase.TestWebdriverWait@44fec1]" name="testWait" duration-ms="2329" started-at="2015-08-02T11:14:40Z" finished-at="2015-08-02T11:14:43Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[document.getElementById(...) is null
-Command duration or timeout: 41 milliseconds
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
+              <![CDATA[Unable to locate element: {"method":"id","selector":"iframeResult"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+*** Element info: {Using=id, value=iframeResult}
+Session ID: 918c958d-5d42-4953-9e83-426eb50462c5
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]]]>
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: document.getElementById(...) is null
-Command duration or timeout: 41 milliseconds
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"iframeResult"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+*** Element info: {Using=id, value=iframeResult}
+Session ID: 918c958d-5d42-4953-9e83-426eb50462c5
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
-	at testcase.TestMouseAction.testAction(TestMouseAction.java:41)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testcase.TestWebdriverWait.testWait(TestWebdriverWait.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -678,136 +715,59 @@ Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true,
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.WebDriverException: document.getElementById(...) is null
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"iframeResult"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
 Driver info: driver.version: unknown
-	at <anonymous class>.anonymous(http://www.w3schools.com/ajax/tryit_view.asp?x=0.38957617331385264 line 68 > Function:1:1)
-	at <anonymous class>.handleEvaluateEvent(http://www.w3schools.com/ajax/tryit_view.asp?x=0.38957617331385264:68:11)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3372060217898444313webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous3372060217898444313webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAction -->
-      </class> <!-- testcase.TestMouseAction -->
-    </test> <!-- Webdriver Suite -->
-    <test name="Java Script Suite" duration-ms="30587" started-at="2014-10-24T06:03:41Z" finished-at="2014-10-24T06:04:11Z">
-      <class name="testcase.TestRadioButton">
-        <test-method status="FAIL" signature="testRadioButton()[pri:0, instance:testcase.TestRadioButton@fa1b85]" name="testRadioButton" duration-ms="6089" started-at="2014-10-24T11:33:53Z" finished-at="2014-10-24T11:33:59Z">
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestRadioButton.testRadioButton(TestRadioButton.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRadioButton -->
-      </class> <!-- testcase.TestRadioButton -->
-      <class name="testcase.TestSelect">
-        <test-method status="FAIL" signature="testDropDown()[pri:0, instance:testcase.TestSelect@739474]" name="testDropDown" duration-ms="6093" started-at="2014-10-24T11:34:05Z" finished-at="2014-10-24T11:34:11Z">
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestSelect.testDropDown(TestSelect.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDropDown -->
-      </class> <!-- testcase.TestSelect -->
+        </test-method> <!-- testWait -->
+      </class> <!-- testcase.TestWebdriverWait -->
+    </test> <!-- Java Script Suite -->
+    <test name="Webdriver Suite" duration-ms="27595" started-at="2015-08-02T03:14:57Z" finished-at="2015-08-02T03:15:24Z">
       <class name="testcase.TestTimeUnit">
-        <test-method status="FAIL" signature="testTime()[pri:0, instance:testcase.TestTimeUnit@1783d33]" name="testTime" duration-ms="65" started-at="2014-10-24T11:34:11Z" finished-at="2014-10-24T11:34:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.TestTimeUnit@c08a64]" name="setUp" is-config="true" duration-ms="13638" started-at="2015-08-02T11:14:57Z" finished-at="2015-08-02T11:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testTime()[pri:0, instance:testcase.TestTimeUnit@c08a64]" name="testTime" duration-ms="173" started-at="2015-08-02T11:15:10Z" finished-at="2015-08-02T11:15:10Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Timed out waiting for page load.
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
+Command duration or timeout: 78 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: adab2389-f637-4e5f-828d-7cf51a7a1da9
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]]]>
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
+Command duration or timeout: 78 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
+Session ID: adab2389-f637-4e5f-828d-7cf51a7a1da9
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=39.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at testcase.TestTimeUnit.testTime(TestTimeUnit.java:16)
+	at testcase.TestTimeUnit.testTime(TestTimeUnit.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -829,320 +789,89 @@ Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true,
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'Rahul-PC', ip: '192.168.178.1', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.7.0_17'
 Driver info: driver.version: unknown
-	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:7974:44)
-	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4120:7)
-	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4128:7)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4787006481379420412webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8598)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4787006481379420412webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4712)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4787006481379420412webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4720)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4787006481379420412webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTime -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.TestTimeUnit@c08a64]" name="tearDown" is-config="true" duration-ms="359" started-at="2015-08-02T11:15:24Z" finished-at="2015-08-02T11:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testcase.TestTimeUnit -->
-      <class name="testcase.TestPrompt">
-        <test-method status="FAIL" signature="testCasePrompt()[pri:0, instance:testcase.TestPrompt@174be7]" name="testCasePrompt" duration-ms="9139" started-at="2014-10-24T11:33:44Z" finished-at="2014-10-24T11:33:53Z">
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[No Such Element : //div[@id='main']/div[8]/a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: No Such Element : //div[@id='main']/div[8]/a
-	at helper.StartWebDriver.getElement(StartWebDriver.java:65)
-	at helper.ButtonHelper.clickButton(ButtonHelper.java:8)
-	at testcase.TestPrompt.testCasePrompt(TestPrompt.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCasePrompt -->
-      </class> <!-- testcase.TestPrompt -->
-      <class name="testcase.TestPageFactory">
-        <test-method status="FAIL" signature="testLogin()[pri:0, instance:testcase.TestPageFactory@1952be0]" name="testLogin" duration-ms="3091" started-at="2014-10-24T11:33:41Z" finished-at="2014-10-24T11:33:44Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"link text","selector":"File a Bug"}
-Command duration or timeout: 3.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"File a Bug"}
-Command duration or timeout: 3.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at testcase.TestPageFactory.testLogin(TestPageFactory.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"File a Bug"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- testcase.TestPageFactory -->
-      <class name="testcase.TestScript">
-        <test-method status="FAIL" signature="testCaseScript()[pri:0, instance:testcase.TestScript@24cdc7]" name="testCaseScript" duration-ms="6081" started-at="2014-10-24T11:33:59Z" finished-at="2014-10-24T11:34:05Z">
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestScript.testCaseScript(TestScript.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseScript -->
-      </class> <!-- testcase.TestScript -->
-    </test> <!-- Java Script Suite -->
-    <test name="Webdriver Backed Selenium Suite" duration-ms="68308" started-at="2014-10-24T06:04:11Z" finished-at="2014-10-24T06:05:20Z">
+    </test> <!-- Webdriver Suite -->
+    <test name="Webdriver Backed Selenium Suite" duration-ms="99241" started-at="2015-08-02T03:15:24Z" finished-at="2015-08-02T03:17:03Z">
       <class name="testcase.TestWebDriverBacked">
-        <test-method status="PASS" signature="testBackedSelenium()[pri:0, instance:testcase.TestWebDriverBacked@10dae16]" name="testBackedSelenium" duration-ms="24043" started-at="2014-10-24T11:34:11Z" finished-at="2014-10-24T11:34:35Z">
+        <test-method status="FAIL" signature="testBackedSelenium()[pri:0, instance:testcase.TestWebDriverBacked@1ca493a]" name="testBackedSelenium" duration-ms="63302" started-at="2015-08-02T11:15:37Z" finished-at="2015-08-02T11:16:40Z">
+          <exception class="com.thoughtworks.selenium.Wait$WaitTimedOutException">
+            <message>
+              <![CDATA[Failed to load page within 30000 ms]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.thoughtworks.selenium.Wait$WaitTimedOutException: Failed to load page within 30000 ms
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:99)
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:76)
+	at com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad.handleSeleneseCommand(WaitForPageToLoad.java:79)
+	at com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad.handleSeleneseCommand(WaitForPageToLoad.java:1)
+	at com.thoughtworks.selenium.webdriven.SeleneseCommand.apply(SeleneseCommand.java:35)
+	at com.thoughtworks.selenium.webdriven.Timer.run(Timer.java:40)
+	at com.thoughtworks.selenium.webdriven.WebDriverCommandProcessor.execute(WebDriverCommandProcessor.java:148)
+	at com.thoughtworks.selenium.webdriven.WebDriverCommandProcessor.doCommand(WebDriverCommandProcessor.java:73)
+	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:681)
+	at testcase.TestWebDriverBacked.testBackedSelenium(TestWebDriverBacked.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.thoughtworks.selenium.Wait$WaitTimedOutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBackedSelenium -->
       </class> <!-- testcase.TestWebDriverBacked -->
-      <class name="testcase.TestWebElement">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.TestWebElement@127ffd7]" name="setUp" is-config="true" duration-ms="15152" started-at="2014-10-24T11:30:43Z" finished-at="2014-10-24T11:30:59Z">
+      <class name="testcase.TestSeleniumLogger">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcase.TestSeleniumLogger@4007f4]" name="setUp" is-config="true" duration-ms="12889" started-at="2015-08-02T11:15:24Z" finished-at="2015-08-02T11:15:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testFindElemet()[pri:0, instance:testcase.TestWebElement@127ffd7]" name="testFindElemet" duration-ms="6089" started-at="2014-10-24T11:35:14Z" finished-at="2014-10-24T11:35:20Z">
-          <exception class="java.util.NoSuchElementException">
-            <message>
-              <![CDATA[Link Text Not Found : File a Bug]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException: Link Text Not Found : File a Bug
-	at helper.LinkHelper.clickLink(LinkHelper.java:16)
-	at testcase.TestWebElement.testFindElemet(TestWebElement.java:18)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
+        <test-method status="PASS" signature="openWebpage()[pri:0, instance:testcase.TestSeleniumLogger@4007f4]" name="openWebpage" duration-ms="11362" started-at="2015-08-02T11:16:52Z" finished-at="2015-08-02T11:17:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFindElemet -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.TestWebElement@127ffd7]" name="tearDown" is-config="true" duration-ms="695" started-at="2014-10-24T11:35:20Z" finished-at="2014-10-24T11:35:20Z">
+        </test-method> <!-- openWebpage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.TestSeleniumLogger@4007f4]" name="tearDown" is-config="true" duration-ms="391" started-at="2015-08-02T11:17:03Z" finished-at="2015-08-02T11:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcase.TestWebElement -->
-      <class name="testcase.TestWebdriverWait">
-        <test-method status="FAIL" signature="testWait()[pri:0, instance:testcase.TestWebdriverWait@1202afe]" name="testWait" duration-ms="38161" started-at="2014-10-24T11:34:35Z" finished-at="2014-10-24T11:35:14Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 30 seconds waiting for testcase.TestWebdriverWait$1@1246ad9
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for testcase.TestWebdriverWait$1@1246ad9
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:175)
-	at testcase.TestWebdriverWait.testWait(TestWebdriverWait.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"counter"}
-Command duration or timeout: 3.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Session ID: 5e44784f-b5a4-4db7-bd90-b23b09685aad
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at testcase.TestWebdriverWait$1.apply(TestWebdriverWait.java:29)
-	at testcase.TestWebdriverWait$1.apply(TestWebdriverWait.java:1)
-	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:177)
-	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 26 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"counter"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
-System info: host: 'Rahul-PC', ip: '14.97.235.202', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_67'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/RAHUL~1.RAT/AppData/Local/Temp/anonymous4626895877134349469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWait -->
-      </class> <!-- testcase.TestWebdriverWait -->
+      </class> <!-- testcase.TestSeleniumLogger -->
     </test> <!-- Webdriver Backed Selenium Suite -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Webdriver -->
 </testng-results>

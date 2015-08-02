@@ -177,10 +177,19 @@ public class ExcelConfiguration {
 		return (HashMap<String, ArrayList<String>>) sheetMap;
 	}
 	
+	/**
+	 * @param aMesg
+	 * @return	
+	 */
 	public static String transformExpMessage(String aMesg) {
-		if(aMesg.indexOf(Configuration.aTransformKeyword)!= -1)
-			return aMesg.substring(0, aMesg.indexOf(Configuration.aTransformKeyword));
+		if(aMesg.indexOf(Configuration.aTransformKeyword)!= -1){
+			aMesg = aMesg.substring(0, aMesg.indexOf(Configuration.aTransformKeyword));
+			if(aMesg.indexOf(Configuration.aTransformKeywordTwo)!= -1){
+				return aMesg.substring(0, aMesg.indexOf(Configuration.aTransformKeywordTwo));
+			}
+			return aMesg;
+		}
 		return aMesg;
 	}
-
+	
 }

@@ -86,7 +86,7 @@ public class ReportData {
 						exceptionTrace = exceptionTraceNodeList.item(Configuration.aFirstIndex).getTextContent();
 						expMessage = NodeFactory.getNameAttribute(exceptionNodeList.item(Configuration.aFirstIndex), Configuration.aClassNode);
 						testMethodDataList.add(Configuration.aExceptionMsgIndex, expMessage);
-						testMethodDataList.add(Configuration.aExceptionStackTrace, ExcelConfiguration.transformExpMessage(exceptionTrace));
+						testMethodDataList.add(Configuration.aExceptionStackTrace, ExcelConfiguration.transformExpMessage(exceptionTrace).trim());
 					}
 					else{
 						testMethodDataList.add(Configuration.aExceptionMsgIndex, " ");
@@ -129,6 +129,8 @@ public class ReportData {
 					expCell.setCellValue(testData.get(Configuration.aExceptionMsgIndex));
 					XSSFCell exceptionTraceCell = row.createCell(Configuration.aExceptionStackTrace);
 					exceptionTraceCell.setCellValue(testData.get(Configuration.aExceptionStackTrace).trim());
+					XSSFCell locatorCell = row.createCell(Configuration.aLocatorIndex);
+					locatorCell.setCellValue(JsonUtility.deserializeJsonObject(testData.get(Configuration.aExceptionStackTrace).trim()));
 				} else {
 					cellStatus.setCellStyle(passCelStyle);
 					cellStatus.setCellValue(testData.get(Configuration.aTestStatusIndex));

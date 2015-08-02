@@ -1,3 +1,5 @@
+com\xls\report\config\ElementLocator.class
+com\xls\report\utility\JsonUtility.class
 com\xls\report\main\MainClass.class
 com\xls\report\utility\NodeFactory.class
 com\xls\report\main\ExcelReport.class
