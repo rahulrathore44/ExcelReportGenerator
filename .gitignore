@@ -4,7 +4,6 @@
  
 *.pydevproject
 .metadata
-.project
 *.tmp
 *.bak
 *.swp
@@ -12,3 +11,4 @@
 .classpath
 .settings/
 .loadpath
+/target/
